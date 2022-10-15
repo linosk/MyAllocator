@@ -1,8 +1,8 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -pedantic
 
-CFILES = main.c tll.c myallocator.c
-OFILES = main.o tll.o myallocator.o
+CFILES = main.c myallocator.c
+OFILES = main.o myallocator.o
 
 BINARY = main
 
