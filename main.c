@@ -1,20 +1,27 @@
 #include "myallocator.h"
-#include "tll.h"
+
+typedef struct Node
+{
+    int value;
+    struct Node* next;
+}Node;
+
+void insert(Node* firstnode, int newvalue)
+{
+    Node* newnode = allocation(sizeof(Node));
+    newnode->value=newvalue;
+    newnode->next=NULL;
+    if (firstnode==NULL)
+    {
+        firstnode=newnode;
+        return;
+    }
+}
 
 int main(int argc, char** argv)
 {
-    int * f0 = allocation(sizeof(int));
-    int * f1 = allocation(sizeof(int));
-    int * f2 = allocation(sizeof(int));
-    int * f3 = allocation(sizeof(int));
-    int * f4 = allocation(sizeof(int));
-    int * f5 = allocation(sizeof(int));
-    int * f6 = allocation(sizeof(int));
-    int * f7 = allocation(sizeof(int));
-
-    print_chunks();
-
-    deallocation(f2);
+    Node* head = NULL;
+    insert(head,1);
 
     print_chunks();
 
