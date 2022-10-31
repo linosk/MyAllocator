@@ -20,6 +20,9 @@ void insert(Node* firstnode, int newvalue)
 
 int main(int argc, char** argv)
 {
+
+	//CHECK COMPILED PROGRAM WITH ONLY PRINTF WITH VALGRIND DO SEE THAT PRINTF DOES ALLOCATES 1024 BYTS!!!!
+
     Node* head = NULL;
     insert(head,1);
 
