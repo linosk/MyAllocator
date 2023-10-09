@@ -1,8 +1,8 @@
 # MyAllocator
-Memory allocator in C
+Memory allocator in C.
 
 # Goal
-Learning about memory allocation
+Learning about memory allocation.
 
 # Build
-make
+- make
