@@ -6,3 +6,6 @@ Learning about memory allocation.
 
 # Build
 - make
+
+# Run
+./main
