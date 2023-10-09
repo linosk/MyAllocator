@@ -5,5 +5,4 @@ Memory allocator in C
 Learning about memory allocation
 
 # Build
-Run:
 make
